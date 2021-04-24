@@ -33,4 +33,4 @@ jobs:
         run: npm install -g surge
         
       - name: Install surge
-        run: surge ./ http://mhk-bc2020-c1.surge.sh/
+        run: surge ./ http://mhk-bc2020-c1.surge.sh/ --token ${{secret.SURGE_TOKEN}}
